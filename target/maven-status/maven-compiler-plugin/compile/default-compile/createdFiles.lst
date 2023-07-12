@@ -1,0 +1,7 @@
+com\automationdemo\pages\HomePage.class
+com\automationdemo\pages\UsersPage.class
+com\automationdemo\pages\ReportsPage.class
+com\automationdemo\pages\TasksPage.class
+com\automationdemo\base\TestBase.class
+com\automationdemo\pages\LoginPage.class
+com\automationdemo\utils\TestUtil.class
