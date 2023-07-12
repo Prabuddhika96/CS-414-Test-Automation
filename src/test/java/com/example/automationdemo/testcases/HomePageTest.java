@@ -21,19 +21,16 @@ public class HomePageTest extends TestBase {
 		initialization();
 		loginPage = new LoginPage();
 		homePage = loginPage.loging(properties.getProperty("username"), properties.getProperty("password"));
-		
-		
 	}
 
 	@Test(priority = 1)
-	public void homePageLogoTest() {
-		boolean flag= homePage.validateActiTimeLogo();
-		Assert.assertTrue(flag,"Cannot find the Logo");
+	public void homePageTaskLinkTest() {
+		homePage.clickOnTaskLink();
 	}
 
 	@Test(priority = 2)
-	public void homePageTaskLinkTest() {
-		homePage.clickOnTaskLink();
+	public void homePageUserLinkTest() {
+		homePage.clickOnUserLink();
 	}
 	
 	@AfterMethod

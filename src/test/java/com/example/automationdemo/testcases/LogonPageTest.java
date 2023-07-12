@@ -37,10 +37,8 @@ public class LogonPageTest extends TestBase {
 	
 	@Test(priority = 1)
 	public void loginPageLogoTest() {
-		
-	boolean flag= loginPage.validateActiTimeLogo();
-	Assert.assertTrue(flag);
-		
+		boolean flag= loginPage.validateActiTimeLogo();
+		Assert.assertTrue(flag);
 	}
 	
 	

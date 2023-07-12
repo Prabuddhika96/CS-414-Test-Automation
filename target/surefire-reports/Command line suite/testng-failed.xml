@@ -3,6 +3,13 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
+      <class name="com.example.automationdemo.testcases.UserPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginPageLogoTest"/>
+          <include name="seup"/>
+        </methods>
+      </class> <!-- com.example.automationdemo.testcases.UserPageTest -->
       <class name="com.example.automationdemo.testcases.LogonPageTest">
         <methods>
           <include name="tearDown"/>

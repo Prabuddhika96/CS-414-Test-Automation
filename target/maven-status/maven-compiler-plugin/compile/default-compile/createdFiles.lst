@@ -1,7 +1,7 @@
 com\example\automationdemo\pages\TasksPage.class
 com\example\automationdemo\base\TestBase.class
 com\example\automationdemo\utils\TestUtil.class
-com\example\automationdemo\pages\UsersPage.class
 com\example\automationdemo\pages\LoginPage.class
+com\example\automationdemo\pages\UserPage.class
 com\example\automationdemo\pages\ReportsPage.class
 com\example\automationdemo\pages\HomePage.class

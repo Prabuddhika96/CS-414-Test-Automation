@@ -1,2 +1,3 @@
 com\example\automationdemo\testcases\HomePageTest.class
+com\example\automationdemo\testcases\UserPageTest.class
 com\example\automationdemo\testcases\LogonPageTest.class

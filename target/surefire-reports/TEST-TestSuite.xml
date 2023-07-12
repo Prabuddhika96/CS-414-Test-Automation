@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="TestSuite" time="20.53" errors="0" skipped="1">
+<testsuite tests="5" failures="1" name="TestSuite" time="19.332" errors="0" skipped="1">
   <properties>
     <property name="idea.version" value="2022.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,10 +63,22 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.automationdemo.testcases.HomePageTest" name="homePageLogoTest" time="5.431"/>
-  <testcase classname="com.example.automationdemo.testcases.LogonPageTest" name="loginPageLogoTest" time="0.057"/>
-  <testcase classname="com.example.automationdemo.testcases.HomePageTest" name="homePageTaskLinkTest" time="7.194"/>
-  <testcase classname="com.example.automationdemo.testcases.LogonPageTest" name="LoginTest" time="7.848">
+  <testcase classname="com.example.automationdemo.testcases.HomePageTest" name="homePageLogoTest" time="5.199"/>
+  <testcase classname="com.example.automationdemo.testcases.LogonPageTest" name="loginPageLogoTest" time="0.067"/>
+  <testcase classname="com.example.automationdemo.testcases.UserPageTest" name="loginPageLogoTest" time="0.009">
+    <failure message="Cannot invoke &quot;com.example.automationdemo.pages.UserPage.clickOnUser()&quot; because &quot;this.userPage&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;com.example.automationdemo.pages.UserPage.clickOnUser()&quot; because &quot;this.userPage&quot; is null
+	at com.example.automationdemo.testcases.UserPageTest.loginPageLogoTest(UserPageTest.java:29)
+</failure>
+    <system-err>Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 24979
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 13, 2023 1:29:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase classname="com.example.automationdemo.testcases.HomePageTest" name="homePageTaskLinkTest" time="6.911"/>
+  <testcase classname="com.example.automationdemo.testcases.LogonPageTest" name="LoginTest" time="7.146">
     <skipped/>
     <system-err>java.io.FileNotFoundException: D:\400 Level\CS 414\New folder\TestAutomationDemo\src\main\java\com\automationdemo\testdata\actitimeTestData.xlsx (The system cannot find the path specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
