@@ -6,20 +6,20 @@
     <groups>
     </groups>
     <test started-at="2023-04-02T16:25:01Z" name="Default test" finished-at="2023-04-02T16:26:58Z" duration-ms="117304">
-      <class name="com.automationdemo.testcases.LogonPageTest">
-        <test-method is-config="true" signature="seup()[pri:0, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:25:01Z" name="seup" finished-at="2023-04-02T16:25:56Z" duration-ms="55226" status="PASS">
+      <class name="testcases.com.example.automationdemo.LogonPageTest">
+        <test-method is-config="true" signature="seup()[pri:0, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:25:01Z" name="seup" finished-at="2023-04-02T16:25:56Z" duration-ms="55226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seup -->
-        <test-method signature="loginPageLogoTest()[pri:1, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:25:56Z" name="loginPageLogoTest" finished-at="2023-04-02T16:25:56Z" duration-ms="65" status="PASS">
+        <test-method signature="loginPageLogoTest()[pri:1, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:25:56Z" name="loginPageLogoTest" finished-at="2023-04-02T16:25:56Z" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:25:56Z" name="tearDown" finished-at="2023-04-02T16:25:56Z" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:25:56Z" name="tearDown" finished-at="2023-04-02T16:25:56Z" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="seup()[pri:0, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:25:57Z" name="seup" finished-at="2023-04-02T16:26:58Z" duration-ms="61042" status="FAIL">
+        <test-method is-config="true" signature="seup()[pri:0, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:25:57Z" name="seup" finished-at="2023-04-02T16:26:58Z" duration-ms="61042" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[timeout: Timed out receiving message from renderer: 56.764
@@ -31,7 +31,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: 4c3e69104256196e7c9b8473aad30934]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 56.764
+                <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 56.764
   (Session info: chrome=111.0.5563.111)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'EXACTPRO-NB156', ip: '192.168.8.133', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
@@ -50,8 +50,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.automationdemo.base.TestBase.initialization(TestBase.java:64)
-at com.automationdemo.testcases.LogonPageTest.seup(LogonPageTest.java:32)
+at com.example.automationdemo.base.TestBase.initialization(TestBase.java:64)
+at testcases.com.example.automationdemo.LogonPageTest.seup(LogonPageTest.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,7 +86,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seup -->
-        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="LoginTest" data-provider="getactiTimeTestData" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
+        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="LoginTest" data-provider="getactiTimeTestData" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[timeout: Timed out receiving message from renderer: 56.764
@@ -98,7 +98,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: 4c3e69104256196e7c9b8473aad30934]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 56.764
+                <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 56.764
   (Session info: chrome=111.0.5563.111)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'EXACTPRO-NB156', ip: '192.168.8.133', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
@@ -117,8 +117,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.automationdemo.base.TestBase.initialization(TestBase.java:64)
-at com.automationdemo.testcases.LogonPageTest.seup(LogonPageTest.java:32)
+at com.example.automationdemo.base.TestBase.initialization(TestBase.java:64)
+at testcases.com.example.automationdemo.LogonPageTest.seup(LogonPageTest.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,15 +153,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="tearDown" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="tearDown" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="seup()[pri:0, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="seup" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="seup()[pri:0, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="seup" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seup -->
-        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="LoginTest" data-provider="getactiTimeTestData" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
+        <test-method signature="LoginTest(java.lang.String, java.lang.String)[pri:2, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="LoginTest" data-provider="getactiTimeTestData" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[timeout: Timed out receiving message from renderer: 56.764
@@ -173,7 +173,7 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: 4c3e69104256196e7c9b8473aad30934]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 56.764
+                <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 56.764
   (Session info: chrome=111.0.5563.111)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'EXACTPRO-NB156', ip: '192.168.8.133', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
@@ -192,8 +192,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.automationdemo.base.TestBase.initialization(TestBase.java:64)
-at com.automationdemo.testcases.LogonPageTest.seup(LogonPageTest.java:32)
+at com.example.automationdemo.base.TestBase.initialization(TestBase.java:64)
+at testcases.com.example.automationdemo.LogonPageTest.seup(LogonPageTest.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -228,11 +228,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationdemo.testcases.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="tearDown" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.com.example.automationdemo.LogonPageTest@7ceb3185]" started-at="2023-04-02T16:26:58Z" name="tearDown" finished-at="2023-04-02T16:26:58Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.automationdemo.testcases.LogonPageTest -->
+      </class> <!-- testcases.com.example.automationdemo.LogonPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

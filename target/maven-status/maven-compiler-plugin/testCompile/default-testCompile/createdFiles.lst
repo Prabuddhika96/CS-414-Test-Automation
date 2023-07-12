@@ -1,2 +1,2 @@
-com\automationdemo\testcases\LogonPageTest.class
-com\automationdemo\testcases\HomePageTest.class
+com\example\automationdemo\testcases\HomePageTest.class
+com\example\automationdemo\testcases\LogonPageTest.class

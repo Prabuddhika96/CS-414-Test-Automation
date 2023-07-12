@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-skipped">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods,  1 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Command_line_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.example.automationdemo.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +116,17 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.automationdemo.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTest(admin, manager)">LoginTest(admin, manager)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.example.automationdemo.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageLogoTest">homePageLogoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.automationdemo.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTest(trainee, trainee)">LoginTest(trainee, trainee)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.example.automationdemo.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageTaskLinkTest">homePageTaskLinkTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.automationdemo.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageLogoTest">homePageLogoTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.automationdemo.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageTaskLinkTest">homePageTaskLinkTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.automationdemo.testcases.LogonPageTest" class="method navigator-link" hash-for-method="loginPageLogoTest">loginPageLogoTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.example.automationdemo.testcases.LogonPageTest" class="method navigator-link" hash-for-method="loginPageLogoTest">loginPageLogoTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -137,10 +141,33 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.example.automationdemo.testcases.LogonPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest">
+                  </a> <!-- LoginTest -->
+                  <span class="method-name">LoginTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;java.io.InputStream.markSupported()&quot; because &quot;inp&quot; is null
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;java.io.InputStream.markSupported()&quot; because &quot;inp&quot; is null
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:65)
+	at com.example.automationdemo.utils.TestUtil.getTestData(TestUtil.java:46)
+	at com.example.automationdemo.testcases.LogonPageTest.getactiTimeTestData(LogonPageTest.java:50)
+	... 30 more
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.automationdemo.testcases.HomePageTest</span>
+              <span class="class-name">com.example.automationdemo.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -162,25 +189,9 @@
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.automationdemo.testcases.LogonPageTest</span>
+              <span class="class-name">com.example.automationdemo.testcases.LogonPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest(admin, manager)">
-                  </a> <!-- LoginTest(admin, manager) -->
-                  <span class="method-name">LoginTest</span>
-                  <span class="parameters">(admin, manager)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginTest(trainee, trainee)">
-                  </a> <!-- LoginTest(trainee, trainee) -->
-                  <span class="method-name">LoginTest</span>
-                  <span class="parameters">(trainee, trainee)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="loginPageLogoTest">
@@ -201,8 +212,8 @@
 &lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.automationdemo.testcases.HomePageTest&quot;/&gt;
-      &lt;class name=&quot;com.automationdemo.testcases.LogonPageTest&quot;/&gt;
+      &lt;class name=&quot;com.example.automationdemo.testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.example.automationdemo.testcases.LogonPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -242,32 +253,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'homePageTaskLinkTest')
-data.setCell(0, 2, 'com.automationdemo.testcases.HomePageTest')
-data.setCell(0, 3, 7468);
+data.setCell(0, 2, 'com.example.automationdemo.testcases.HomePageTest')
+data.setCell(0, 3, 7195);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'homePageLogoTest')
-data.setCell(1, 2, 'com.automationdemo.testcases.HomePageTest')
-data.setCell(1, 3, 5524);
+data.setCell(1, 2, 'com.example.automationdemo.testcases.HomePageTest')
+data.setCell(1, 3, 5430);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LoginTest')
-data.setCell(2, 2, 'com.automationdemo.testcases.LogonPageTest')
-data.setCell(2, 3, 428);
+data.setCell(2, 1, 'loginPageLogoTest')
+data.setCell(2, 2, 'com.example.automationdemo.testcases.LogonPageTest')
+data.setCell(2, 3, 56);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'LoginTest')
-data.setCell(3, 2, 'com.automationdemo.testcases.LogonPageTest')
-data.setCell(3, 3, 336);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginPageLogoTest')
-data.setCell(4, 2, 'com.automationdemo.testcases.LogonPageTest')
-data.setCell(4, 3, 60);
+data.setCell(3, 2, 'com.example.automationdemo.testcases.LogonPageTest')
+data.setCell(3, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -293,75 +300,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automationdemo.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.automationdemo.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homePageLogoTest</span>
-                <span class="method-start">12963 ms</span>
+                <span class="method-start">11038 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18488 ms</span>
+                <span class="method-start">16468 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automationdemo.testcases.LogonPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.automationdemo.testcases.LogonPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">18769 ms</span>
+                <span class="method-start">16710 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageLogoTest</span>
-                <span class="method-start">28778 ms</span>
+                <span class="method-start">25042 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28838 ms</span>
+                <span class="method-start">25099 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.automationdemo.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.example.automationdemo.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">29133 ms</span>
+                <span class="method-start">25364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">homePageTaskLinkTest</span>
-                <span class="method-start">39596 ms</span>
+                <span class="method-start">33242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">47065 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.automationdemo.testcases.LogonPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">seup</span>
-                <span class="method-start">48166 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">LoginTest(admin, manager)</span>
-                <span class="method-start">56439 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">56868 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">seup</span>
-                <span class="method-start">57068 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">LoginTest(trainee, trainee)</span>
-                <span class="method-start">65269 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">65605 ms</span>
+                <span class="method-start">40437 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
