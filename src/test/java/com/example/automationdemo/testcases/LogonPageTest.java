@@ -31,7 +31,6 @@ public class LogonPageTest extends TestBase {
 	public void seup() {
 		initialization();
 		loginPage = new LoginPage();
-		
 	}
 	
 	
@@ -54,8 +53,6 @@ public class LogonPageTest extends TestBase {
 	}
 	@Test(priority = 2,dataProvider="getactiTimeTestData")
 	public void LoginTest(String userName, String password) {
-		
-		
 		homePage = loginPage.loging(userName, password);
 	}
 	
