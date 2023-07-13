@@ -45,11 +45,8 @@ public class LogonPageTest extends TestBase {
 	
 	public Object[][] getactiTimeTestData() {
 		Object data[][]=testUtil.getTestData(sheetName);
-		
 		return data;
-		
-		
-		
+
 	}
 	@Test(priority = 2,dataProvider="getactiTimeTestData")
 	public void LoginTest(String userName, String password) {
